@@ -1,5 +1,8 @@
 from game_data import data
+from art import logo,vs
 import random
+
+print(logo)
 
 Compare_A = random.choice(data)
 Against_B = random.choice(data)
@@ -14,7 +17,8 @@ resume_game = True
 
 while resume_game:
     print(f"Compare A: {Compare_A['name']} ,a {Compare_A['description']} from {Compare_A['country']}")
-    print(f"Against B: {Against_B['name']} ,a {Against_B['description']} from {Against_B['country']}")
+    print(vs)
+    print(f"Against B: {Against_B['name']} ,a {Against_B['description']} from {Against_B['country']}\n")
 
     followers = input("Who has more Followers? Type 'A' or 'B': ").lower()
     if followers == 'a':
@@ -23,6 +27,7 @@ while resume_game:
             print(f"You Are Right,Current Score is : {score}")
             Compare_A = Against_B
             Against_B = random.choice(data)
+            print('\n' * 20)
             while Against_B == Compare_A:
                 Against_B = random.choice(data)
         else:
@@ -35,6 +40,7 @@ while resume_game:
             print(f"You Are Right,Current Score is : {score}")
             Compare_A = Against_B
             Against_B = random.choice(data)
+            print('\n' * 20)
             while Against_B == Compare_A:
                 Against_B = random.choice(data)
         else:
