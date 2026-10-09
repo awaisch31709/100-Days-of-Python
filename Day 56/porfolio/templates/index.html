@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Muhammad Awais | Associate AI Engineer</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+        <style>
+    #main .avatar {
+        display: block;
+        width: 8em;
+        height: 8em;
+        margin: 0 auto 1.5em;
+    }
+    #main .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 100%;
+    }
+</style>
+        <noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+    </head>
+    <body class="is-loading">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Main -->
+            <section id="main">
+                <header>
+                    <span class="avatar"><img src="{{ url_for('static', filename='images/Awais.png') }}" alt="Muhammad Awais" /></span>
+                    <h1>Muhammad Awais</h1>
+                    <p>Associate AI Engineer</p>
+                </header>
+                <footer>
+                 <ul class="icons">
+    <li><a href="https://www.linkedin.com/in/muhammad-awais-0b642827a/" class="fa-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="https://github.com/awaisch31709" class="fa-github" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    <li><a href="https://web.facebook.com/awais.ch.274356" class="fa-facebook" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+</ul>
+                </footer>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="copyright">
+                    <li>&copy; Muhammad Awais</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            if ('addEventListener' in window) {
+                window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+                document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+            }
+        </script>
+
+    </body>
+</html>
