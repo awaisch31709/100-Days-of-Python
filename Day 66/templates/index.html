@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe&Wifi API</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 16px; line-height: 1.5; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        code { background: #f2f2f2; padding: 2px 4px; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Cafe & Wifi API</h1>
+    <p>Find laptop-friendly cafes around London. Use the routes below.</p>
+    <!-- After publishing your Postman docs, change the href below to your documenter.getpostman.com link -->
+    <p><a href="https://documenter.getpostman.com/" target="_blank">Full API documentation (Postman)</a></p>
+
+    <h2>Routes</h2>
+    <table>
+        <tr><th>Method</th><th>Route</th><th>What it does</th></tr>
+        <tr><td>GET</td><td><code>/random</code></td><td>One random cafe</td></tr>
+        <tr><td>GET</td><td><code>/all</code></td><td>All cafes</td></tr>
+        <tr><td>GET</td><td><code>/search?loc=Peckham</code></td><td>Cafes at a location (404 if none)</td></tr>
+        <tr><td>POST</td><td><code>/add</code></td><td>Add a cafe (form: name, map_url, img_url, loc, seats, toilet, wifi, sockets, calls, coffee_price)</td></tr>
+        <tr><td>PATCH</td><td><code>/update-price/&lt;id&gt;?new_price=£3.80</code></td><td>Update a cafe's coffee price</td></tr>
+        <tr><td>DELETE</td><td><code>/report-closed/&lt;id&gt;?api-key=...</code></td><td>Remove a closed cafe (needs the API key)</td></tr>
+    </table>
+</body>
+</html>
